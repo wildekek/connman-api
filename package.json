@@ -1,4 +1,4 @@
-{
+l{
   "name": "jsdx-connman",
   "version": "0.2.1",
   "description": "JSDX Connection Manager API",
@@ -26,7 +26,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "dbus": ">= 0.2.0",
+    "dbus": "git+https://github.com/Doodle3D/node-dbus.git",
     "async": "~0.2.9"
   },
   "main" : "./lib/connman"
