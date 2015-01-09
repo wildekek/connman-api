@@ -9,9 +9,9 @@ var connman = new ConnMan();
 
 connman.init(function() {
 
-	var wifi = connman.technologies['WiFi'];
-
-	wifi.enableTethering('HotspotSSID', 'password123', function(err, res) {
+	var wifi = connman.technologies.WiFi;
+    
+	wifi.enableTethering('HotspotSSID', 'password123', function(err) {
 		if (!err) {
 			console.log('Tethering enabled');
 		} else {
