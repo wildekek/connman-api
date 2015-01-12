@@ -1,6 +1,6 @@
 var ConnMan = require('../');
 var async = require('async');
-var targetNetwork = 'hss'; //'Doodle3D-wisp';
+var targetNetwork = 'your wifi network';
 
 var connman = new ConnMan();
 var wifi; 

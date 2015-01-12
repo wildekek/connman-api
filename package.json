@@ -1,23 +1,30 @@
 {
-  "name": "jsdx-connman",
-  "version": "0.2.1",
-  "description": "JSDX Connection Manager API",
+  "name": "connman-api",
+  "version": "0.2.2",
+  "description": "Connman (Opensource connection manager) client",
   "keywords": [
-    "jsdx",
+    "internet",
+    "connman",
+    "client",
+    "dbus",
     "connection manager",
     "network",
-    "gui"
+    "api"
   ],
-  "homepage": "https://github.com/cfsghost/jsdx-connman",
+  "homepage": "https://github.com/Doodle3D/connman-api",
   "author": {
+    "name": "Peter Uithoven",
+    "email": "peter@peteruithoven.nl"
+  },
+  "contributors": [{
     "name": "Fred Chien(錢逢祥)",
     "email": "fred@mandice.com",
     "web": "http://www.mandice.com/"
-  },
+  }],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:cfsghost/jsdx-connman.git"
+    "url": "git@github.com:Doodle3D/connman-api.git"
   },
   "directories": {
     "tests": "lib"
