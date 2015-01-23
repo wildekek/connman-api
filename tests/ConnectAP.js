@@ -48,33 +48,35 @@ async.series([
         service.connect(function(err, agent) {
             if (err) return next(err); 
             var failed = false;
-            agent.on('Release', function() {
-                console.log('Release');
-            });
-            agent.on('ReportError', function(path, err) {
-                console.log('ReportError:');
-                console.log(err);
-                failed = true;
-                /* connect-failed */
-                /* invalid-key */
-            });
-            agent.on('RequestBrowser', function(path, url) {
-                console.log('RequestBrowser');
-            });
-            /* Initializing Agent for connecting access point */
-            agent.on('RequestInput', function(path, dict, callback) {
-                console.log(dict);
+            if(connman.enableAgent) {
+              agent.on('Release', function() {
+                  console.log('Release');
+              });
+              agent.on('ReportError', function(path, err) {
+                  console.log('ReportError:');
+                  console.log(err);
+                  failed = true;
+                  /* connect-failed */
+                  /* invalid-key */
+              });
+              agent.on('RequestBrowser', function(path, url) {
+                  console.log('RequestBrowser');
+              });
+              /* Initializing Agent for connecting access point */
+              agent.on('RequestInput', function(path, dict, callback) {
+                  console.log(dict);
 
-                if ('Passphrase' in dict) {
-                    callback({ 'Passphrase': '12345' });
-                    return;
-                }
+                  if ('Passphrase' in dict) {
+                      callback({ 'Passphrase': '12345' });
+                      return;
+                  }
 
-                callback({});
-            });
-            agent.on('Cancel', function() {
-                console.log('Cancel');
-            });
+                  callback({});
+              });
+              agent.on('Cancel', function() {
+                  console.log('Cancel');
+              });
+            }
             next();
         });
     },
