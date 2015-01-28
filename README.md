@@ -21,7 +21,7 @@ process.env.DBUS_SESSION_BUS_ADDRESS = 'unix:path=/run/dbus/system_bus_socket';
 
 Credits 
 ---
-Original module developed by Fred Chien <<fred@mandice.com>> @ [Mandice Company](http://www.mandice.com/).
+Original module developed by Fred Chien <<fred@mandice.com>> @ [Mandice Company](http://www.mandice.com/).<br/>
 Improved by [Peter Uithoven](http://github.com/peteruithoven/) @ [Doodle3D](http://doodle3d.com/)
 
 License
