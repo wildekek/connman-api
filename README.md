@@ -19,16 +19,11 @@ process.env.DISPLAY = ':0';
 process.env.DBUS_SESSION_BUS_ADDRESS = 'unix:path=/run/dbus/system_bus_socket';
 ```
 
+Credits 
+---
+Original module developed by Fred Chien <<fred@mandice.com>> @ [Mandice Company](http://www.mandice.com/).
+Improved by [Peter Uithoven](http://github.com/peteruithoven/) @ [Doodle3D](http://doodle3d.com/)
+
 License
 ---
 Licensed under the MIT License
-
-Authors
----
-Copyright(c) 2014 Peter Uithoven <<peter@peteruithoven.nl>> @ Doodle3D <br/>
-Copyright(c) 2012 Fred Chien <<fred@mandice.com>>
-
-Copyright
----
-Copyright(c) 2012 Mandice Company.
-(http://www.mandice.com/)
