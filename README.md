@@ -4,6 +4,10 @@ Node.js Connman (Opensource connection manager) client. <br/>
 Forked from [jsdx-connman](https://github.com/cfsghost/jsdx-connman). <br/>
 Connman: http://www.connman.net/
 
+Unmaintained
+------------
+The project we used this in stopped, so we're looking for new maintainers.
+
 Install
 ---
 ```$npm install```
